@@ -58,14 +58,12 @@ class Catagory extends CoreEntity {}
 // const product = productservice.get(1);
 // // productservice.update(product);
 
-
-interface IService <T>{
-    Insert(entity : T):boolean;
-    Update(entity : T):T;
-    Delete(id:IdType):boolean;
-    Get (id:IdType):T;
-    GetAll():T[]
-
+interface IService<T> {
+  Insert(entity: T): boolean;
+  Update(entity: T): T;
+  Delete(id: IdType): boolean;
+  Get(id: IdType): T;
+  GetAll(): T[];
 }
 
 // class ProductService implements IService<Product>{
@@ -103,27 +101,27 @@ interface IService <T>{
 //     GetAll(): Catagory[] {
 //         throw new Error("Method not implemented.");
 //     }
-    
+
 // }
 
-class Service<T extends CoreEntity> implements IService<T>{
-    Insert(entity: T): boolean {
-        throw new Error("Method not implemented.");
-    }
-    Update(entity: T): T {
-        throw new Error("Method not implemented.");
-    }
-    Delete(id: IdType): boolean {
-        throw new Error("Method not implemented.");
-    }
-    Get(id: IdType): T {
-        throw new Error("Method not implemented.");
-    }
-    GetAll(): T[] {
-        throw new Error("Method not implemented.");
-    }
-    
-}
+// class Service<T extends CoreEntity> implements IService<T> {
+//   Insert(entity: T): boolean { return true}
+//   Update(entity: T): T { return entity}
+//   Delete(id: IdType): boolean { return true}
+//   Get(id: IdType): T { return T }
+//   GetAll(): T[] { return new Array<T>()}
+// }
 
-class ProductService extends Service<Product>{}
-class CatagoryService extends Service<Catagory>{}
+// interface  IProductService {}
+// class ProductService extends Service<Product> implements IProductService {}
+
+
+// interface ICatagoryService {
+//   GetProducts(id: IdType): Product[];
+// }
+
+// class CatagoryService extends Service<Catagory> implements ICatagoryService {
+//   GetProducts(id: IdType): Product[] {
+//     throw new Error("Method not implemented.");
+//   }
+// }
