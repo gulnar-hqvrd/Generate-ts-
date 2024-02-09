@@ -1,14 +1,14 @@
 // npm i pluralize
 // npm i --save-dev @types/pluralize  -js ile yazıldığından dolayı yüklendi
-
-
-import { Category } from "../models/Category";
-import { Product } from "../models/Product";
-import { Shipper } from "../models/Shipper";
 import pluralize from "pluralize";
 
+// import Category from "../models/Category";
+// import Product from "../models/Product";
+// import Shipper from "../models/Shipper";
+
+import { Category, Product, Shipper } from "../models";
+
 type typeId = number | string;
- 
 
 interface IService<T> {
   get(id: typeId): Promise<T>;
@@ -35,8 +35,6 @@ class Service<T> implements IService<T> {
     return data;
   }
 }
-
-
 
 class CategoryService extends Service<Category> {}
 class ProductService extends Service<Product> {}
