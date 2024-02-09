@@ -31,7 +31,7 @@ type IdType = number | string;
 class CoreEntity {
   Id?: IdType;
 }
-class Product extends CoreEntity {}
+// class Product extends CoreEntity {}
 class Catagory extends CoreEntity {}
 
 // class ProductService {
@@ -58,13 +58,13 @@ class Catagory extends CoreEntity {}
 // const product = productservice.get(1);
 // // productservice.update(product);
 
-interface IService<T> {
-  Insert(entity: T): boolean;
-  Update(entity: T): T;
-  Delete(id: IdType): boolean;
-  Get(id: IdType): T;
-  GetAll(): T[];
-}
+// interface IService<T> {
+//   Insert(entity: T): boolean;
+//   Update(entity: T): T;
+//   Delete(id: IdType): boolean;
+//   Get(id: IdType): T;
+//   GetAll(): T[];
+// }
 
 // class ProductService implements IService<Product>{
 //     Insert(entity: Product): boolean {
