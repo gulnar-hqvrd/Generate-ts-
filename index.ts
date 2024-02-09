@@ -7,11 +7,17 @@ import { CategoryService, ProductService } from "./services";
 const categoryService = new CategoryService();
 const productService = new ProductService();
 
+
+let data:any = []
+
 categoryService
   .getAll("https://northwind.vercel.app/api/categories")
   .then((categories) => {
-    console.log(categories);
+   categories.forEach((Catagory) => {console.log(Catagory);data.push(Catagory)}
+   );    
   });
+  // console.log(data);
+
 
 // productService.getAll("http://localhost:5128/api/products").then((products) => {
 //   console.log(products);
