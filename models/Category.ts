@@ -1,10 +1,10 @@
 export class Category {
-    categoryID: number;
-    categoryName: string;
-    description: string;
-    constructor() {
-      this.categoryID = 0;
-      this.categoryName = "";
-      this.description = "";
-    }
+  categoryID: number;
+  name: string;
+  description: string;
+  constructor() {
+    this.categoryID = 0;
+    this.name = "";
+    this.description = "";
   }
+}

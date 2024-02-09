@@ -1,1 +1,1 @@
-class CatagoryService implements IService<Catagory> {}
+// class CatagoryService implements IService<Catagory> {}
