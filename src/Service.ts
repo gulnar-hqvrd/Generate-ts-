@@ -1,3 +1,10 @@
+import pluralize  from "pluralize";
+
+
+console.log(pluralize("category"));
+console.log(pluralize("product"));
+
+
 class Category {
     categoryID: number;
     categoryName: string;
