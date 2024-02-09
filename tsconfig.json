@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // Derlenmiş JavaScript'in hangi ECMAScript sürümüne uygun olacağını belirler.
+    "esModuleInterop": true, // CommonJS ve AMD modülleriyle varsayılan içe aktarımların daha uyumlu olmasını sağlar.
+    "forceConsistentCasingInFileNames": true, // Dosya adlarında büyük/küçük harf tutarlılığını zorunlu kılar.
+    "strict": true, // Tüm sıkı tip denetim seçeneklerini etkinleştirir.
+    "skipLibCheck": true, // `.d.ts` dosyalarındaki hata kontrolünü atlar.
+    "baseUrl": "./", // Göreli modül çözünürlüğü için temel dizin.
+    "paths": { "*": ["node_modules"] }, // Modül çözünürlüğü için yolları belirler.
+    "allowJs": true, // Proje içindeki JS dosyalarının derlenmesine izin verir.
+    "noEmit": false, // Derleme sırasında dosya çıktısı üretip üretmemeyi kontrol eder.
+    "module": "commonjs", // Hangi modül sisteminin kullanılacağını belirler (ör. CommonJS, ES6).
+    "outDir": "./script" // Derlenmiş dosyaların çıktı klasörü.
+  },
+  "include": ["src/**/*", "types/typeId.ts", "index.ts"], // Derleme işlemine dahil edilecek dosyalar veya dizinler.
+  "exclude": ["node_modules", "**/*.spec.ts"] // Derleme işleminden hariç tutulacak dosyalar veya dizinler.
+  // "watch": true // Dosyaları izleyerek anlık derleme yapar.
+}
+// tsc --watch

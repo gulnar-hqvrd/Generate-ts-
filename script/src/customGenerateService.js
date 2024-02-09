@@ -1,7 +1,6 @@
+"use strict";
 // abstract class BaseEnitity {
-
 // }
-
 // class Employee extends BaseEnitity {PersonelNo : number;}
 // class Student extends BaseEnitity {StudentNo : number}
 // class DatabaseService{
@@ -11,10 +10,8 @@
 //             return true;
 //         }
 //         return false
-        
 //     }
 // }
-
 // const service = new DatabaseService ()
 // service.insert(new Employee());
 // service.insert(new Student())

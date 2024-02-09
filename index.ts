@@ -2,7 +2,7 @@
 // npm i --save-dev @types/pluralize  -js ile yazıldığından dolayı yüklendi
 
 // import { CategoryService } from "../services";
-import { CategoryService, ProductService } from "../services";
+import { CategoryService, ProductService } from "./services";
 
 const categoryService = new CategoryService();
 const productService = new ProductService();
